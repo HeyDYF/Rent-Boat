@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="770.0" prefWidth="490.0" spacing="10.0" style="-fx-background-color: #E6E6FA;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.boat.HelloController">
+
+    <children>
+        <Pane prefHeight="160.0" prefWidth="500.0" style="-fx-border-color: #BDB76B; -fx-border-width: 10;">
+            <children>
+                <Button layoutX="130.0" layoutY="100.0" mnemonicParsing="false" onAction="#ParkClose_Click"
+                        prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: grey; -fx-border-width: 4;"
+                        text="公园关门">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="20.0" layoutY="100.0" mnemonicParsing="false" onAction="#ParkOpen_Click"
+                        prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: grey; -fx-border-width: 4;"
+                        text="公园开门">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="20.0" layoutY="20.0" text="超级无敌租船系统" textFill="#9e1b1b">
+                    <font>
+                        <Font name="Microsoft YaHei" size="54.0"/>
+                    </font>
+                </Label>
+                <Button layoutX="240.0" layoutY="100.0" mnemonicParsing="false" onAction="#ProVersion_Click"
+                        prefHeight="40.0" prefWidth="210.0" style="-fx-border-color: grey; -fx-border-width: 4;"
+                        text="【高级版】解锁更多功能">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+        </Pane>
+        <Pane fx:id="BigPane1" prefHeight="180.0" prefWidth="500.0"
+              style="-fx-border-color: #BDB76B; -fx-border-width: 10;">
+            <VBox.margin>
+                <Insets left="10.0" right="10.0"/>
+            </VBox.margin>
+            <children>
+                <Pane fx:id="Pane_Boat_1" layoutX="20.0" layoutY="20.0" onMouseClicked="#Pane_Boat_1_Click"
+                      prefHeight="100.0" prefWidth="100.0"
+                      style="-fx-border-color: black; -fx-background-color: #2E8B57; -fx-border-width: 5;"/>
+                <Label fx:id="Label_Boat1_Condition" alignment="CENTER" layoutX="20.0" layoutY="140.0" prefHeight="20.0"
+                       prefWidth="100.0" text="可租用" textAlignment="CENTER" textOverrun="CLIP">
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                    <effect>
+                        <Blend/>
+                    </effect>
+                </Label>
+                <Label alignment="CENTER" layoutX="20.0" layoutY="120.0" prefHeight="20.0" prefWidth="100.0" text="1号船"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="130.0" layoutY="120.0" prefHeight="20.0" prefWidth="100.0" text="2号船"
+                       textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_Boat2_Condition" alignment="CENTER" layoutX="130.0" layoutY="140.0"
+                       prefHeight="20.0" prefWidth="100.0" text="可租用" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Pane fx:id="Pane_Boat_2" layoutX="130.0" layoutY="20.0" onMouseClicked="#Pane_Boat_2_Click"
+                      prefHeight="100.0" prefWidth="100.0"
+                      style="-fx-border-color: black; -fx-background-color: #2E8B57; -fx-border-width: 5;"/>
+                <Label alignment="CENTER" layoutX="240.0" layoutY="120.0" prefHeight="20.0" prefWidth="100.0" text="3号船"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_Boat3_Condition" alignment="CENTER" layoutX="240.0" layoutY="140.0"
+                       prefHeight="20.0" prefWidth="100.0" text="可租用" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Pane fx:id="Pane_Boat_3" layoutX="240.0" layoutY="20.0" onMouseClicked="#Pane_Boat_3_Click"
+                      prefHeight="100.0" prefWidth="100.0"
+                      style="-fx-border-color: black; -fx-background-color: #2E8B57; -fx-border-width: 5;"/>
+                <Label alignment="CENTER" layoutX="350.0" layoutY="120.0" prefHeight="20.0" prefWidth="100.0" text="4号船"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_Boat4_Condition" alignment="CENTER" layoutX="350.0" layoutY="140.0"
+                       prefHeight="20.0" prefWidth="100.0" text="可租用" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Pane fx:id="Pane_Boat_4" layoutX="350.0" layoutY="20.0" onMouseClicked="#Pane_Boat_4_Click"
+                      prefHeight="100.0" prefWidth="100.0"
+                      style="-fx-border-color: black; -fx-background-color: #2E8B57; -fx-border-width: 5;"/>
+            </children>
+        </Pane>
+        <Pane fx:id="BigPane2" prefHeight="210.0" prefWidth="500.0"
+              style="-fx-border-color: #BDB76B; -fx-border-width: 10;">
+            <VBox.margin>
+                <Insets left="10.0" right="10.0"/>
+            </VBox.margin>
+            <children>
+                <Button fx:id="Button_Start" layoutX="330.0" layoutY="100.0" mnemonicParsing="false"
+                        onAction="#Button_Start_Click" prefHeight="40.0" prefWidth="120.0"
+                        style="-fx-border-width: 4; -fx-border-color: grey;" text="开始租用">
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="Button_End" layoutX="330.0" layoutY="150.0" mnemonicParsing="false"
+                        onAction="#Button_End_Click" prefHeight="40.0" prefWidth="120.0"
+                        style="-fx-border-color: grey; -fx-border-width: 4;" text="结束租用">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="Label_Num_CurBoat" alignment="CENTER" layoutX="20.0" layoutY="130.0" prefHeight="20.0"
+                       prefWidth="100.0" text="请选择船只" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_Condition_CurBoat" alignment="CENTER" layoutX="20.0" layoutY="160.0"
+                       prefHeight="20.0" prefWidth="100.0" text="当前不可用" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Pane fx:id="Pane_CurBoat" layoutX="20.0" layoutY="20.0" onMouseClicked="#Pane_Boat_1_Click"
+                      prefHeight="100.0" prefWidth="100.0"
+                      style="-fx-border-color: black; -fx-background-color: grey; -fx-border-width: 5;"/>
+                <Label contentDisplay="TOP" layoutX="140.0" layoutY="20.0" prefHeight="30.0" prefWidth="80.0"
+                       text="借出时间：" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="140.0" layoutY="60.0" prefHeight="30.0" prefWidth="80.0" text="归还时间："
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_StartTime" alignment="CENTER" layoutX="220.0" layoutY="20.0" prefHeight="30.0"
+                       prefWidth="230.0"
+                       style="-fx-border-color: grey; -fx-border-width: 4; -fx-background-color: #F5F5F5;" text=" "
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_EndTime" alignment="CENTER" layoutX="220.0" layoutY="60.0" prefHeight="30.0"
+                       prefWidth="230.0"
+                       style="-fx-border-color: grey; -fx-border-width: 4; -fx-background-color: #F5F5F5;"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="140.0" layoutY="155.0" prefHeight="30.0" prefWidth="120.0" text="今日租用次数："
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_Count" alignment="CENTER" layoutX="250.0" layoutY="150.0" prefHeight="40.0"
+                       prefWidth="50.0"
+                       style="-fx-border-color: grey; -fx-border-width: 4; -fx-background-color: F5F5F5;"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+                <Label contentDisplay="TOP" layoutX="140.0" layoutY="105.0" prefHeight="30.0" prefWidth="80.0"
+                       text="租用时长：" textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="Label_TotalTime" alignment="CENTER" layoutX="220.0" layoutY="100.0" prefHeight="40.0"
+                       prefWidth="80.0"
+                       style="-fx-border-color: grey; -fx-border-width: 4; -fx-background-color: F5F5F5;"
+                       textAlignment="CENTER" textOverrun="CLIP">
+                    <effect>
+                        <Blend/>
+                    </effect>
+                    <font>
+                        <Font name="Microsoft YaHei" size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="BigPane3" prefHeight="170.0" prefWidth="500.0"
+              style="-fx-border-color: #BDB76B; -fx-border-width: 10;">
+            <children>
+                <Button fx:id="getCount" layoutX="20.0" layoutY="20.0" mnemonicParsing="false"
+                        onAction="#getCount_Click" prefHeight="40.0" prefWidth="120.0"
+                        style="-fx-border-color: grey; -fx-border-width: 4;" text="租用次数统计">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="getAverageTime" layoutX="20.0" layoutY="65.0" mnemonicParsing="false"
+                        onAction="#getAverageTime_Click" prefHeight="40.0" prefWidth="120.0"
+                        style="-fx-border-color: grey; -fx-border-width: 4;" text="平均时间统计">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="getLongestTime" layoutX="20.0" layoutY="110.0" mnemonicParsing="false"
+                        onAction="#getLongestTime_Click" prefHeight="40.0" prefWidth="120.0"
+                        style="-fx-border-color: grey; -fx-border-width: 4;" text="最长租用时间">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </Button>
+                <TextArea fx:id="text" layoutX="150.0" layoutY="20.0" prefHeight="130.0" prefWidth="300.0"
+                          style="-fx-border-color: grey; -fx-border-width: 4;">
+                    <font>
+                        <Font name="Microsoft YaHei" size="15.0"/>
+                    </font>
+                </TextArea>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0"/>
+            </VBox.margin>
+        </Pane>
+    </children>
+</VBox>
