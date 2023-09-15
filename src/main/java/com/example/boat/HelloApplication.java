@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
 //        Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
 
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("DYF租船系统");
+        stage.setTitle("超级无敌租船系统");
 
         stage.setScene(scene);
         stage.getIcons().add(new Image("file:src/main/resources/img/boatLogo.png"));
